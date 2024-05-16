@@ -1,0 +1,29 @@
+.todos {
+    margin-top: 1rem;
+    margin-inline: 3rem;
+
+    .todos-empty {
+        display: block;
+        margin: 5rem auto;
+        width: 50%;
+    }
+
+    * {
+        font-size: var(--fz);
+    }
+}
+
+.btn-new {
+    position: fixed;
+    bottom: 5rem;
+    // right: 6rem;
+    right: 25%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    background-color: var(--accent);
+    color: var(--primary);
+}
