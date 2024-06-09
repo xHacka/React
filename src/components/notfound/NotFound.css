@@ -1,0 +1,12 @@
+.notfound {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    place-items: center;
+    text-align: center;
+}
+
+.notfound h1 {
+    width: 100%;
+}

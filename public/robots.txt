@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /secret_5b763307374b7a1043be1cc047b2e466

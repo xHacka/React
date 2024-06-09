@@ -1,0 +1,10 @@
+.profile {
+    display: flex;
+    place-items: center;
+    text-align: center;
+}
+
+.profile h1 { 
+    width: 100%;
+    font-weight: normal;
+}
