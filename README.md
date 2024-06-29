@@ -87,3 +87,9 @@ src
 ## Live Preview
 
 Live preview can be found here: https://nimble-starlight-45f8b0.netlify.app/
+
+## Credits
+
+Images:
+- [Hero Image](https://www.freepik.com/free-photo/cinema-still-life_3564441.htm#fromView=search&page=1&position=0&uuid=c4b5d66f-0886-4d2a-bef6-1577a1df7db3)<br>
+- [Unknown Person Image](https://www.flaticon.com/free-icon/unknown_3113095?term=unknown&page=1&position=19&origin=search&related_id=3113095)

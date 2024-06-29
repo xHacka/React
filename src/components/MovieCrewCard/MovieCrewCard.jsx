@@ -5,7 +5,6 @@ const MovieCrewCard = ({ person }) => {
     const profilePictureErrorHandler = (e) => {
         e.target.src = '/images/unknown.png';  
         e.target.onerror = null;
-        // https://www.flaticon.com/free-icon/unknown_3113095?term=unknown&page=1&position=19&origin=search&related_id=3113095
     }
     return <div className='movie-details--person-container'>
         <div>

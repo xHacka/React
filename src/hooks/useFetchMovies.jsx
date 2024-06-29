@@ -43,7 +43,6 @@ const useFetchMovies = (movieName = null, movieId = null) => {
           }
         });
         setMovie(response.data);
-        console.log(endpoint)
       } catch (error) {
         setError(error);
       } finally {
