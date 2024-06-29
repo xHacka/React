@@ -1,0 +1,28 @@
+.header {
+    background: #f9f9f9;
+    padding: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 0;
+    margin: 0;
+    
+    .nav-link {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+        
+        &:hover {
+            color: #ffdd57;
+        }
+    }
+}
+
+.spacer {
+    flex-grow: 1;
+}
