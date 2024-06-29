@@ -1,0 +1,31 @@
+.search-form--form {
+    display: flex;
+    place-items: center;
+    margin: 0 auto;
+}
+
+.search-form--input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    width: 300px; 
+    border-radius: 1rem;
+}
+
+.search-form--button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+.search-form--p {
+    color: red;
+    margin: 0;
+}

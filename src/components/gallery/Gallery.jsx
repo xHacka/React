@@ -1,27 +1,25 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import "./Gallery.css";
-
-const API = "https://jsonplaceholder.typicode.com/photos";
-const IMAGES_LIMIT = 4;
+import useFetchMovies from "../../hooks/useFetchMovies";
+import { useState } from "react";
+import { MovieCard, MovieSearchForm } from "..";
+import "./Gallery.scss";
 
 export const Gallery = () => {
-  let [images, setImages] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(API, { params: { _limit: IMAGES_LIMIT } })
-      .then((data) => setImages(data.data));
-  }, []);
-
+  const [query, setQuery] = useState(null)
+  const { movie, loading, error } = useFetchMovies(query);
   return (
     <main className="gallery">
-      {images.map((image) => (
-        <div className="gallery-card">
-          <img key={image.id} src={image.url} alt={image.title} />
-        <p>{image.title}</p>
-        </div>
-      ))}
+      <MovieSearchForm setQuery={setQuery} />
+      <div className="gallery-movies">
+        {loading && <div>Loading...</div>}
+        {error && <div>Error: {error.message}</div>}
+        {movie && movie.results.length > 0 ? (
+          movie.results.map((movie) => (
+            <MovieCard key={movie.id} movie={movie} />
+          ))
+        ) : (
+          <div>No movies found.</div>
+        )}
+      </div>
     </main>
   );
 };

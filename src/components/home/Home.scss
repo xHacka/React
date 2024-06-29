@@ -1,0 +1,30 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.325rem;
+}
+
+.home-quote {
+    text-align: center;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+        max-width: 40rem;
+        font-style: italic;
+        margin-block: 3rem 1rem;
+    }
+}
+
+.home-hero {
+    max-width: 30rem;
+    
+    img {
+        width: 100%;
+        display: block;
+    }
+}

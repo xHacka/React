@@ -1,0 +1,37 @@
+.movie-details--crew-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.movie-details--person-container {
+    display: flex;
+}
+
+.movie-details--profile-image {
+    width: 120px;
+    height: 180px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.movie-details--details {
+    flex: 1;
+    
+    h2 {
+        margin-bottom: 5px;
+        font-size: 20px;
+        color: #333;
+    }
+    
+    p {
+        margin: 5px 0;
+        color: #666;
+    }
+}

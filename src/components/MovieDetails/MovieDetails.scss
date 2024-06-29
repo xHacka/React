@@ -1,0 +1,23 @@
+.movie-details--container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.movie-details--basics {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.movie-details--basics-img img {
+    border-radius: 2rem;
+}
+
+.movie-details--basics-text {
+    width: 50%;
+}
+
+.movie-details--overview {
+    margin-block: 1rem;
+}
