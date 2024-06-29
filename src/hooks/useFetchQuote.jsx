@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 const API = "https://api.api-ninjas.com/v1/quotes";
-const API_KEY = process.env.NINJA_API_KEY 
+const API_KEY = "8Q3UuMmISnkCBdK1vac70A==pAuTqoIbRIzh0mYv"
 
 const useFetchQuote = (category = null) => {
     category = category ?? "movies";

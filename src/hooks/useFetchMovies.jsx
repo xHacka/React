@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const API = 'https://api.themoviedb.org/3'
-const TOKEN = process.env.THEMOVIEDB_TOKEN;
+const TOKEN = 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYzNkMmFjN2NkM2YxZTUzNTJhMDRhYjE4N2RlZWRmYSIsIm5iZiI6MTcxOTY0NDkzMS4wNDEzODMsInN1YiI6IjY2N2ZiMjEyZmMwNmQ0YWY2ZWZlZjNmMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.zPM1jayZt0PRZf1YQQOe7oXmIh0bWWHJXvBXT5-f3Pg'
 
 const useFetchMovies = (movieName = null, movieId = null) => {
   const [movie, setMovie] = useState(null);
